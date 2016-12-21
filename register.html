@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Mapa interativo</title>
+</head>
+<body>
+    <div class="container-fluid" style="padding-top:1%">
+        <div class="row">
+            <a href="index.html" class="btn btn-primary">Voltar</a><br><br>
+            <div class="panel panel-primary">
+                <div class="panel-heading">Cadastro</div>
+                <div class="panel-body">
+                    <form id="form-register" method="POST" acept-charset="UTF-8">
+                     <div class="form-group">
+                        <label for="login">Nome</label>
+                        <input type="text" name="name" class="form-control" id="name"  required="true">
+                      </div>
+                      <div class="form-group">
+                        <label for="login">Email</label>
+                        <input type="email" name="email" class="form-control" id="email"  required="true">
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" class="form-control" name="password" required="true">
+                      </div>
+                       <div class="form-group">
+                        <label for="password">Confirme a Senha</label>
+                        <input id="password-confirm" type="password" class="form-control" name="password-confirm" required="true">
+                      </div>
+                      <button type="submit" id="registerBtn" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/diversos.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
